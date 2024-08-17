@@ -23,27 +23,24 @@ body {
 header {
     background: #333;
     color: #fff;
-    padding: 5px 0;
+    padding: 10px 0; /* Adjusted padding for better spacing */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-    padding: 10px 1px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    
 }
 
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 20px; /* Added padding for spacing */
 }
 
 nav .logo img {
-    width: 150px;
+    width: 120px; /* Adjusted for better fit on mobile */
 }
 
 .nav-links {
@@ -73,6 +70,7 @@ nav .logo img {
     color: #fff;
     text-align: center;
     position: relative;
+    padding-top: 60px; /* Adjusted to account for fixed header */
 }
 
 .hero::after {
@@ -89,7 +87,7 @@ nav .logo img {
 .hero-content {
     position: relative;
     z-index: 2;
-    margin-top: 20px;
+    padding: 20px; /* Added padding for better spacing */
 }
 
 .hero h1 {
@@ -119,7 +117,7 @@ nav .logo img {
 
 /* Section Styling */
 section {
-    padding: 60px 0;
+    padding: 60px 20px; /* Added horizontal padding for mobile */
 }
 
 h2 {
@@ -129,8 +127,9 @@ h2 {
     color: #333;
     padding-top: 100px;
 }
+
 /* Basic styling for the phone link */
- .phone {
+.phone {
     text-decoration: underline;
 }
 
@@ -138,22 +137,23 @@ h2 {
     text-decoration: underline;
     cursor: pointer;
     transition: transform 0.2s ease, text-decoration 0.2s ease;
-    color:#f4a261;
-    
+    color: #f4a261;
 }
 
 /* Enlarges text slightly when the phone link is active */
 .phone:active {
     text-decoration: underline;
-    transform: scale(1.1); /* Scales text to 110% of its original size */ }
+    transform: scale(1.1); /* Scales text to 110% of its original size */
+}
 
 /* About Us Section */
 .about-us p {
     text-align: center;
-    max-width: 800px;
+    max-width: 100%; /* Adjusted to fit mobile screens */
     margin: 0 auto;
-    font-size: 1.1rem;
+    font-size: 1rem; /* Adjusted for better mobile readability */
     line-height: 1.8;
+    padding: 0 10px; /* Added padding for mobile */
 }
 
 /* Services Section */
@@ -183,25 +183,28 @@ h2 {
 /* Projects Section */
 .projects p {
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1rem; /* Adjusted for better mobile readability */
     line-height: 1.8;
     color: #666;
+    padding: 0 10px; /* Added padding for mobile */
 }
 
 /* Contact Form Section */
 .contact-form p {
     text-align: center;
-    font-size: 1.1rem;
-    margin-bottom: 30px;
+    font-size: 1rem; /* Adjusted for better mobile readability */
+    margin-bottom: 20px;
+    padding: 0 10px; /* Added padding for mobile */
 }
 
 form {
-    max-width: 600px;
+    max-width: 100%; /* Adjusted to fit mobile screens */
     margin: 0 auto;
+    padding: 0 10px; /* Added padding for mobile */
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 15px; /* Adjusted for better spacing on mobile */
 }
 
 label {
@@ -230,7 +233,7 @@ button.cta-button {
 footer {
     background: #333;
     color: #fff;
-    padding: 20px 0;
+    padding: 20px 10px; /* Adjusted padding for mobile */
     text-align: center;
 }
 
@@ -256,6 +259,10 @@ footer {
     .service-list {
         grid-template-columns: 1fr;
     }
+
+    .about-us p, .projects p {
+        font-size: 1rem; /* Adjusted for better readability on mobile */
+    }
 }
 
 @media (max-width: 480px) {
@@ -279,10 +286,10 @@ footer {
     }
 
     .about-us p, .projects p {
-        font-size: 1rem;
+        font-size: 0.9rem; /* Further adjusted for small screens */
     }
 
     form {
-        padding: 0 10px;
+        padding: 0 5px; /* Reduced padding for smaller screens */
     }
 }
