@@ -23,24 +23,27 @@ body {
 header {
     background: #333;
     color: #fff;
-    padding: 10px 0; /* Adjusted padding for better spacing */
+    padding: 10px 0; /* Adjust padding for better spacing */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px; /* Added padding for spacing */
+    width: 100%;
+    max-width: 1200px;
 }
 
 nav .logo img {
-    width: 120px; /* Adjusted for better fit on mobile */
+    width: 150px;
 }
 
 .nav-links {
@@ -70,7 +73,7 @@ nav .logo img {
     color: #fff;
     text-align: center;
     position: relative;
-    padding-top: 60px; /* Adjusted to account for fixed header */
+    padding-top: 60px; /* Adds padding to ensure content is not hidden by the fixed header */
 }
 
 .hero::after {
@@ -87,7 +90,7 @@ nav .logo img {
 .hero-content {
     position: relative;
     z-index: 2;
-    padding: 20px; /* Added padding for better spacing */
+    margin-top: 20px;
 }
 
 .hero h1 {
@@ -117,7 +120,7 @@ nav .logo img {
 
 /* Section Styling */
 section {
-    padding: 60px 20px; /* Added horizontal padding for mobile */
+    padding: 60px 0;
 }
 
 h2 {
@@ -125,7 +128,6 @@ h2 {
     margin-bottom: 20px;
     text-align: center;
     color: #333;
-    padding-top: 100px;
 }
 
 /* Basic styling for the phone link */
@@ -149,11 +151,10 @@ h2 {
 /* About Us Section */
 .about-us p {
     text-align: center;
-    max-width: 100%; /* Adjusted to fit mobile screens */
+    max-width: 800px;
     margin: 0 auto;
-    font-size: 1rem; /* Adjusted for better mobile readability */
+    font-size: 1.1rem;
     line-height: 1.8;
-    padding: 0 10px; /* Added padding for mobile */
 }
 
 /* Services Section */
@@ -183,28 +184,25 @@ h2 {
 /* Projects Section */
 .projects p {
     text-align: center;
-    font-size: 1rem; /* Adjusted for better mobile readability */
+    font-size: 1.1rem;
     line-height: 1.8;
     color: #666;
-    padding: 0 10px; /* Added padding for mobile */
 }
 
 /* Contact Form Section */
 .contact-form p {
     text-align: center;
-    font-size: 1rem; /* Adjusted for better mobile readability */
-    margin-bottom: 20px;
-    padding: 0 10px; /* Added padding for mobile */
+    font-size: 1.1rem;
+    margin-bottom: 30px;
 }
 
 form {
-    max-width: 100%; /* Adjusted to fit mobile screens */
+    max-width: 600px;
     margin: 0 auto;
-    padding: 0 10px; /* Added padding for mobile */
 }
 
 .form-group {
-    margin-bottom: 15px; /* Adjusted for better spacing on mobile */
+    margin-bottom: 20px;
 }
 
 label {
@@ -233,7 +231,7 @@ button.cta-button {
 footer {
     background: #333;
     color: #fff;
-    padding: 20px 10px; /* Adjusted padding for mobile */
+    padding: 20px 0;
     text-align: center;
 }
 
@@ -259,10 +257,6 @@ footer {
     .service-list {
         grid-template-columns: 1fr;
     }
-
-    .about-us p, .projects p {
-        font-size: 1rem; /* Adjusted for better readability on mobile */
-    }
 }
 
 @media (max-width: 480px) {
@@ -286,10 +280,10 @@ footer {
     }
 
     .about-us p, .projects p {
-        font-size: 0.9rem; /* Further adjusted for small screens */
+        font-size: 1rem;
     }
 
     form {
-        padding: 0 5px; /* Reduced padding for smaller screens */
+        padding: 0 10px;
     }
 }
