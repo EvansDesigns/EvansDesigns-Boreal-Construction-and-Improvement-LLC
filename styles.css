@@ -23,23 +23,23 @@ body {
 header {
     background: #333;
     color: #fff;
-    padding: 5px 0;
+    padding: 10px 0; /* Adjust padding for better spacing */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-    padding: 1px 1px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
-    flex-direction: column;
-    
+    justify-content: center;
 }
 
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
+    max-width: 1200px;
 }
 
 nav .logo img {
@@ -73,6 +73,7 @@ nav .logo img {
     color: #fff;
     text-align: center;
     position: relative;
+    padding-top: 60px; /* Adds padding to ensure content is not hidden by the fixed header */
 }
 
 .hero::after {
@@ -127,10 +128,10 @@ h2 {
     margin-bottom: 20px;
     text-align: center;
     color: #333;
-    padding-top: 100px;
 }
+
 /* Basic styling for the phone link */
- .phone {
+.phone {
     text-decoration: underline;
 }
 
@@ -138,14 +139,14 @@ h2 {
     text-decoration: underline;
     cursor: pointer;
     transition: transform 0.2s ease, text-decoration 0.2s ease;
-    color:#f4a261;
-    
+    color: #f4a261;
 }
 
 /* Enlarges text slightly when the phone link is active */
 .phone:active {
     text-decoration: underline;
-    transform: scale(1.1); /* Scales text to 110% of its original size */ }
+    transform: scale(1.1); /* Scales text to 110% of its original size */
+}
 
 /* About Us Section */
 .about-us p {
